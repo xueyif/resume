@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手机端-天猫</title>
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<script>
+var oHtml=document.getElementsByTagName("html")[0];
+var iWidth=document.documentElement.clientWidth;
+iWidth=iWidth>720?720:iWidth;
+oHtml.style.fontSize=iWidth/16+"px";
+</script>
+<!-- <script src="js/mTouch.js"></script> -->
+<link rel="stylesheet" href="css/index.css" />
+</head>
+<body ontouchstart="touchs(event)" ontouchend="touche(event)">
+<script>
+// document.body.style.height=document.documentElement.clientHeight+"px";
+</script>
+<header class="header clearFix" id="header">
+	<a href="javascript:;" class="menu"></a>
+	<form>
+		<input type="text" placeholder="搜索商店/店铺" class="shuru">
+		<input type="submit" value="" class="tijiao">
+	</form>
+	<a href="javascript:;" class="sign">登录</a>
+</header>
+<section class="wrap" id="wrap">
+	<div class="wrap2">
+		<div class="benner clearFix">
+			<div class="image clearFix" ontouchstart="touchstart(event)" ontouchmove="touchmove(event)" ontouchend="touchend(event)">
+				<a href="javascript:;"><img src="img/benner4.jpg"/></a>
+				<a href="javascript:;"><img src="img/benner2.jpg"/></a>
+				<a href="javascript:;"><img src="img/benner5.jpg"/></a>
+				<a href="javascript:;"><img src="img/benner6.jpg"/></a>
+				<a href="javascript:;"><img src="img/benner3.jpg"/></a>
+				<a href="javascript:;"><img src="img/benner1.jpg"/></a>
+			</div>
+			<div class="benner_d">
+				<span class="first"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<section class="box">
+			<div class="box_d">
+				<a href="javascript:;"><span></span><p>积分乐园</p></a>
+				<a href="javascript:;" class="box_d_a2"><span></span><p>充值</p></a>
+				<a href="javascript:;" class="box_d_a3"><span></span><p>闪购全球</p></a>
+				<a href="javascript:;" class="box_d_a4"><span></span><p>聚划算</p></a>
+				<a href="javascript:;" class="box_d_a5"><span></span><p>范儿</p></a>
+			</div>
+			<div class="box_d2 clearFix">
+				<a href="javascript:;" class="hotspot"></a>
+				<div class="message">
+					<a href="javascript:;" class=" clearFix"><span></span><p>高能！时尚不只玫瑰金！FuseForm首发1</p><strong>神秘新品+送运动手环</strong></a>
+					<a href="javascript:;" class=" clearFix"><span></span><p>高能！时尚不只玫瑰金！FuseForm首发2</p><strong>神秘新品+送运动手环</strong></a>
+					<a href="javascript:;" class=" clearFix"><span></span><p>高能！时尚不只玫瑰金！FuseForm首发3</p><strong>神秘新品+送运动手环</strong></a>
+					<a href="javascript:;" class=" clearFix"><span></span><p>高能！时尚不只玫瑰金！FuseForm首发4</p><strong>神秘新品+送运动手环</strong></a>
+				</div>
+			</div>
+		</section>
+		<section class="box2 clearFix">
+			<div class="box2_l">
+				<a href="javascript:;" class="sale"><img src="img/sale.gif"></a>
+				<a href="javascript:;" class="supermarket"><img src="img/supermarket.gif"></a>
+			</div>
+			<div class="box2_r">
+				<a href="javascript:;" class="refresh"><img src="img/refresh.gif"></a>
+				<a href="javascript:;" class="ontrial"><img src="img/ontrial.gif"></a>
+				<a href="javascript:;" class="international"><img src="img/international.gif"></a>
+			</div>
+		</section>
+		<section class="box3">
+			<div class="box3t clearFix"><h2>超级品牌日</h2><a href="javascript:;">更多></a></div>
+			<section class="box3b">
+				<div class="box3b_t clearFix">
+					<a href="javascript:;"><img src="img/box3b_t4.gif"></a>
+					<a href="javascript:;"><img src="img/box3b_t2.gif"></a>
+					<a href="javascript:;"><img src="img/box3b_t3.gif"></a>
+				</div>
+				<a href="javascript:;" class="box3b_b"><img src="img/box3b_b.gif"></a>
+			</section>
+		</section>
+		<section class="box3 box4 clearFix">
+			<div class="box3t"><h2>精选市场</h2></div>
+			<div class="clearFix">
+			<div class="market">
+				<a href="javascript:;">
+					<p>天天搞机</p>
+					<span>每日一秒</span>
+					<em>Mate7</em>
+					<time>¥2599</time>
+				</a>
+				<a href="javascript:;" class="market_a">
+					<p>全球快时尚</p>
+					<span>平价买大牌</span>
+					<em>舒适森女系</em>
+					<time>¥448</time>
+				</a>
+				<a href="javascript:;" class="market_a2">
+					<p>西诱</p>
+					<span>全球值得买</span>
+					<em>粉色包包</em>
+					<time>¥121</time>
+				</a>
+			</div>
+			<ul class="marketl">
+				<li>
+					<a href="javascript:;">
+						<p>物色</p>
+						<span>每日惊喜主题</span>
+						<em>条纹小美妞</em>
+						<time>¥109.9</time>
+						<img src="img/marketl5.gif">
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<p>囤啦</p>
+						<span>台湾超人气</span>
+						<em>萌萌小妹妹</em>
+						<time>¥39.8</time>
+						<img src="img/marketl2.gif">
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<p>喵鲜生</p>
+						<span>美国小龙虾</span>
+						<em>奥巴马吃过</em>
+						<time>¥99</time>
+						<img src="img/marketl3.gif">
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<p>生活家</p>
+						<span>好生活并不贵</span>
+						<em>超值人气款</em>
+						<time>¥18</time>
+						<img src="img/marketl4.gif">
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<p>智娱智乐</p>
+						<span>每天两款试用</span>
+						<em>五折试用</em>
+						<time>¥395</time>
+						<img src="img/marketl5.gif">
+					</a>
+				</li>
+			</ul>
+			</div>
+			<a href="javascript:;" class="box3b_b"><img src="img/box3b_b2.gif"></a>
+		</section>
+		<section class="box3 box5">
+			<div class="box3t clearFix"><h2>超级品牌日</h2><a href="javascript:;">10+家市场></a></div>
+			<section class="box3b">
+				<ul  class="clearFix">
+					<li>
+						<a href="javascript:;" class="electric">
+							<p>电器城</p>
+							<span>6S分期预购</span>
+							<img src="img/electric.gif" />
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="electric">
+							<p>天猫女装</p>
+							<span>品牌闪购</span>
+							<img src="img/electric2.gif" />
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="electric">
+							<p>男女鞋</p>
+							<span>限时疯抢</span>
+							<img src="img/electric3.gif" />
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="electric">
+							<p>美妆</p>
+							<span>品牌特惠</span>
+							<img src="img/electric4.gif" />
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="electric">
+							<p>母婴玩具</p>
+							<span>9元包邮</span>
+							<img src="img/electric5.gif" />
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="electric">
+							<p>大牌男装</p>
+							<span>专柜同款上新</span>
+							<img src="img/electric6.gif" />
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="electric">
+							<p>天猫家装</p>
+							<span>品牌限时特卖</span>
+							<img src="img/electric7.gif" />
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="electric">
+							<p>阿里汽车</p>
+							<span>有好货</span>
+							<img src="img/electric8.gif" />
+						</a>
+					</li>
+				</ul>
+				<a href="javascript:;" class="box3b_b"><img src="img/box3b_b2.gif"></a>
+			</section>
+		</section>
+		<section class="box3 box6">
+			<div class="box3t clearFix"><h2>品牌旗舰</h2><a href="javascript:;">专为你推荐|30家好店></a></div>
+			<section class="box6b">
+				<div class="noao clearFix">
+					<img src="img/noao.gif">
+					<p>诺澳旗舰店</p>
+					<span>16.6万粉丝</span>
+				</div>
+				<div class="hot clearFix">
+					<img src="img/hot.gif">
+					<p>这家一个月1504人关注的店，等你来发现</p>
+				</div>
+				<div class="noao2 clearFix">
+					<a href="javascript:;">
+						<img src="img/noao_1.gif" />
+					</a>
+					<a href="javascript:;">
+						<img src="img/noao_2.gif" />
+					</a>
+					<a href="javascript:;">
+						<img src="img/noao_3.gif" />
+					</a>
+				</div>
+				<div class="box6b_d clearFix">
+					<a href="javascript:;" id="active"><!-- <img src="img/box6b_d.gif"> --></a>
+					<a href="javascript:;"><!-- <img src="img/box6b_d.gif"> --></a>
+				</div>
+			</section>
+		</section>
+		<section class="box7">
+			<p class="love">-猜你喜欢-</p>
+			<ul class="clearFix">
+				<li>
+					<a href="javascript:;">
+						<img src="img/1.gif">
+						<p>韩版高品质权志龙同款外套男士中长款呢大衣修身潮男翻领毛呢风衣</p>
+						<span><em>¥</em>249</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/2.gif">
+						<p>男士夹克青年秋季大码薄款休闲上衣韩版修身棒球服潮秋装外套男装</p>
+						<span><em>¥</em>316</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/3.gif">
+						<p>中长款男士韩版宽松风衣外套纯色英伦秋装时尚休闲青年大衣潮流</p>
+						<span><em>¥</em>299</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/4.gif">
+						<p>长款毛衣开衫男 日系复古潮流宽松针织衫 秋装长外套男青少年线衣</p>
+						<span><em>¥</em>286</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/5.gif">
+						<p>PINLI品立 2015秋装新品时尚男装修身休闲西服中长款西装外套E013</p>
+						<span><em>¥</em>479</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/6.gif">
+						<p>男士夹克青年秋季大码薄款休闲上衣韩版修身棒球服潮秋装外套男装</p>
+						<span><em>¥</em>316</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/7.gif">
+						<p>中长款男士韩版宽松风衣外套纯色英伦秋装时尚休闲青年大衣潮流</p>
+						<span><em>¥</em>299</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/8.gif">
+						<p>秋冬GD权志龙同款双排扣毛呢大衣男中长款呢子大衣男韩版修身风衣</p>
+						<span><em>¥</em>286</span>
+					</a>
+				</li>
+			</ul>
+			<div class="nav clearFix">
+				<a href="javascript:;">开衫女</a><a href="javascript:;">旅行箱</a><a href="javascript:;">护肤套装</a><a href="javascript:;">坚果</a><a href="javascript:;">婚庆用品</a><a href="javascript:;">大闸蟹</a><a href="javascript:;">喜糖</a><a href="javascript:;">洗衣机</a>
+			</div>
+			<ul class="clearFix">
+				<li>
+					<a href="javascript:;">
+						<img src="img/1.gif">
+						<p>韩版高品质权志龙同款外套男士中长款呢大衣修身潮男翻领毛呢风衣</p>
+						<span><em>¥</em>249</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/2.gif">
+						<p>男士夹克青年秋季大码薄款休闲上衣韩版修身棒球服潮秋装外套男装</p>
+						<span><em>¥</em>316</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/3.gif">
+						<p>中长款男士韩版宽松风衣外套纯色英伦秋装时尚休闲青年大衣潮流</p>
+						<span><em>¥</em>299</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/4.gif">
+						<p>长款毛衣开衫男 日系复古潮流宽松针织衫 秋装长外套男青少年线衣</p>
+						<span><em>¥</em>286</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/5.gif">
+						<p>PINLI品立 2015秋装新品时尚男装修身休闲西服中长款西装外套E013</p>
+						<span><em>¥</em>479</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/6.gif">
+						<p>男士夹克青年秋季大码薄款休闲上衣韩版修身棒球服潮秋装外套男装</p>
+						<span><em>¥</em>316</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/7.gif">
+						<p>中长款男士韩版宽松风衣外套纯色英伦秋装时尚休闲青年大衣潮流</p>
+						<span><em>¥</em>299</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/8.gif">
+						<p>秋冬GD权志龙同款双排扣毛呢大衣男中长款呢子大衣男韩版修身风衣</p>
+						<span><em>¥</em>286</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<footer class="footer"></footer>
+	</div>
+</section>
+<script src="js/jquery-2.2.1.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+
+</script>
+</body>
+</html>
