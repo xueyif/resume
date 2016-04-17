@@ -104,6 +104,8 @@ strong,h2,h3{
 	top:1000px;
 }
 .benner .clavier{
+	width: 442px;
+	height: 204px;
 	right:0;
 	bottom:-1000px;
 	transition:1s;

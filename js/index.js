@@ -7,7 +7,6 @@ benner.css('height',dH);
 var bennerH = benner.height();
 box.css('height',boxsL);
 var arrText = ['求职','信息','战斗力','经验'];
-// box.css('top',-3*dH);
 var n = 0;
 var scrollT = 0;
 var onOff = true;
