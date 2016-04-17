@@ -154,7 +154,7 @@ var imgW = playImg[0].offsetWidth;
 var imgLen = playImg.length;
 var timer = null;
 var n = 0;
-var arrUrl = ['img/pid.png','img/tmall.png','img/uehtml.png','img/yinyuetai.png','img/pid2.png','img/tmall2.png']
+var arrUrl = ['img/tmall.png','img/pid.png','img/uehtml.png','img/yinyuetai.png','img/pid2.png','img/tmall2.png']
 var switchS = $('span',$('#switch'));
 opusImg.style.transform = 'translate(0,0)';
 play.style.width = imgLen*imgW+'px';
@@ -181,6 +181,7 @@ roll();
 function roll(){
 	timer = setInterval(function(){
 		n++;
+		console.log(n)
 		switc();
 	},2000)
 }
