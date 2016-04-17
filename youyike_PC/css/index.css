@@ -73,7 +73,7 @@ input,textarea{
 .newsHd p{
 	float:left;
 	font:14px/60px "微软雅黑";
-	text-indent:142px;
+	text-indent:170px;
 	padding-top:12px;
 	color:#737373;
 }
@@ -101,6 +101,9 @@ input,textarea{
 	width: 371px;
 	height: 213px;
 	margin-bottom:10px;
+}
+.url a{
+	color:blue;
 }
 #opus p{
 	width:360px;

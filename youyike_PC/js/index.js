@@ -13,6 +13,9 @@ aDiv[1].style.left = '41px';
 aDiv[1].style.top = '-18px';
 aDiv[2].style.left = '804px';
 aDiv[2].style.top = '54px';
+for(var i=0;i<$('a').length;i++){
+	$('a')[i].setAttribute('target','_blank');
+}
 
 //跟随鼠标
 var benner = document.getElementById('benner');
