@@ -18,19 +18,6 @@ function wheel(){
 		if(!onOff) return;
 		if(box.is(':animated')) return;
 		n--;
-		n = n<=0?0:n;
-		$('#nav li').eq(m).removeClass();
-		$('#nav li').eq(m).html('');
-		$('#nav li').eq(m).stop().animate({
-			width:10,
-			height:10
-		},300)
-		$('#nav li').eq(n).addClass('active');
-		$('#nav li').eq(n).html(arrText[n]);
-		$('#nav li').eq(n).stop().animate({
-			width:50,
-			height:22
-		},300);
 		scrollT = -n*benner.height();
 		if(m!=n){
 			if(n==0){
@@ -49,19 +36,6 @@ function wheel(){
 		if(box.is(':animated')) return;	
 		if(!onOff) return;
 		n++;
-		n = n>=boxsL?boxsL:n;
-		$('#nav li').eq(m).removeClass();
-		$('#nav li').eq(m).html('');
-		$('#nav li').eq(m).stop().animate({
-			width:10,
-			height:10
-		},300)
-		$('#nav li').eq(n).addClass('active');
-		$('#nav li').eq(n).html(arrText[n]);
-		$('#nav li').eq(n).stop().animate({
-			width:50,
-			height:22
-		},300);
 		scrollT = -n*benner.height();
 		if(n==0){
 			bennerEnter();
@@ -750,54 +724,7 @@ function experLeave(opus,scrollT){
 		});
 		fightingEnter();
 	},9000)
-}
-
-$('#nav').css('top',(dH-$('#nav').height())/2);
-var last = 0;
-$('#nav li').each(function(index,item){
-	$(this).click(function(){
-		console.log(index,last)
-		$('#nav li').eq(last).removeClass();
-		$('#nav li').eq(last).html('');
-		$('#nav li').eq(last).stop().animate({
-			width:10,
-			height:10
-		},300)
-		$(this).addClass('active');
-		$(this).html(arrText[index]);
-		$(this).stop().animate({
-			width:50,
-			height:22
-		},300);
-		
-		if(last==0){
-			bennerLeave();
-			setTimeout(enter,1500);
-		}else if(last==1){
-			basicLeave();
-			setTimeout(enter,9000);
-		}else if(last==2){
-			fightingLeave();
-			setTimeout(enter,9000);
-		}else if(last==3){
-			experLeave();
-			setTimeout(enter,6500);
-		}
-		function enter(){
-			if(index==0){
-				bennerEnter();
-			}else if(index==1){
-				basicEnter();
-			}else if(index==2){
-				fightingEnter();
-			}else if(index==3){
-				experEnter();
-			}
-			box.css('top',-index*dH);
-		}
-		last = index;
-	})
-})
+};
 
 
 

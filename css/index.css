@@ -709,26 +709,3 @@ strong,h2,h3{
 	position: absolute;
 	cursor:pointer;
 }
-#nav{
-	width:50px;
-	height:92px;
-	position: fixed;
-	right:10px;
-	z-index:10;
-}
-#nav li{
-	width: 10px;
-	height: 10px;
-	background:#54c3f1;
-	border-radius:10px;
-	cursor:pointer;
-	margin:0 auto 10px;
-}
-#nav .active{
-	width: 50px;
-	height: 22px;
-	color:#fff;
-	border-radius:10px;
-	font:12px/22px "微软雅黑";
-	text-align:center;
-}
