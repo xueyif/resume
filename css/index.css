@@ -7,6 +7,7 @@ li{
 	list-style: none;
 }
 a{
+	outline: none;
 	text-decoration:none;
 }
 strong,h2,h3{
@@ -487,7 +488,7 @@ strong,h2,h3{
 .wroks li{
 	float:left;
 }
-.opus,.opus2,.opus3,.opus4,.opus5{
+.opus,.opus2,.opus3,.opus4,.opus5,.opus6{
 	position: relative;
 }
 .me3{

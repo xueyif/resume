@@ -16,6 +16,7 @@ img{
 	vertical-align:top;
 }
 a{
+	outline:none;
 	text-decoration:none;
 }
 input,textarea{
@@ -199,11 +200,10 @@ input,textarea{
 	float:left;
 	font:14px/70px "微软雅黑";
 	text-align:center;
-}
-#nav li a{
 	display: block;
 	color:#666;
 	position: relative;
+	cursor:pointer;
 }
 #nav #navmove{
 	height:10px;

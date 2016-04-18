@@ -6,7 +6,6 @@ var boxsL = $('#box>section').length;
 benner.css('height',dH);
 var bennerH = benner.height();
 box.css('height',boxsL);
-var arrText = ['求职','信息','战斗力','经验'];
 var n = 0;
 var scrollT = 0;
 var onOff = true;
@@ -651,6 +650,10 @@ function experEnter(){
 				var opus5 = $('.opus5');
 				wrok(opus5);
 			};
+			if(l2>=5000){
+				var opus6 = $('.opus6');
+				wrok(opus6);
+			};
 			wroks.css('left',-l2);
 			return false;
 		});
@@ -685,7 +688,11 @@ function experEnter(){
 		if(left<=-dW*4){
 			var opus5 = $('.opus5');
 			wrok(opus5);
-		}
+		};
+		if(left<=-dW*5){
+				var opus6 = $('.opus6');
+				wrok(opus6);
+		};
 		scrolSpan.css('left',-left/wroksW*scrolW);
 		wroks.css('left',left);
 	});

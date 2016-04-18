@@ -88,7 +88,6 @@ var worksI = $('#worksI');
 var news = $('#news');
 var newsW = news.offsetWidth;
 var newsH = news.offsetHeight;
-// console.log(visua)
 news.style.left = visuaW-newsW-20+'px';
 worksI.onclick = function(){
 	news.style.transition = '.5s';
@@ -203,7 +202,7 @@ var box = $('#box');
 box.style.top = nav.offsetTop-$('#content').offsetHeight-30+'px';
 nav.style.transform = 'translatex(0) scale(1)';
 var navmove = $('#navmove');
-var navA = $('a',nav);
+var navA = $('.navL');
 navmove.style.left = navA[0].offsetLeft + 'px';
 var navAleft = navA[0].offsetLeft;
 var content = $('section',$('#box'));
@@ -216,6 +215,7 @@ for(var i=0;i<content.length;i++){
 		arrElement.push(content[i]);
 	}
 }
+
 for(var i=0;i<navA.length;i++){
 	navA[i].onOff = false;
 	navA[i].index = i;
